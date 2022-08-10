@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Horizonte CDMX es una comunidad cristiana, somos discipulos de Jesús, haciendo discipulos de Jésus">
+    <meta name="author" content="Jesus Jimenez software-mex.com">
+    <meta name="copyright" content="Horizonte CDMX todos los derechos reservados 2022">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;300;400&family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <title>Inscripciones Horizonte CDMX</title>
+</head>
+<body>
+    <nav class="contenedor">
+        <div class="logo">
+          <a href="/index.html"><img src="/images/Logo-HCDMX-2.png" alt="logoHorizonte" class="h"></a>
+           <div class="slogan">
+              <p>Horizonte</p>
+              <p class="slogan_1">COMUNIDAD CRISTIANA</p>
+           </div>
+        </div>
+    </nav>
+    <main>
+        <div class="saludo">
+            <h1>Bienvenidos a Horizonte CDMX</h1>
+        </div>
+        <!-- aqui eligen la categoria-->
+        <section class="cards">
+            <div id="boton" onclick="divLogin()">
+                <img src="/images/discipulados.jpg" class="ima1">
+                <h5 class="letra1">Discipulados</h5>
+            </div>
+            <div id="boton2" onclick="divLogin2()">
+    
+                <img src="/images/servicios.jpeg" class="ima2">
+                <h5 class="letra1">Servicios</h5>
+                
+            </div>
+            <div id="boton3" onclick="divLogin3()">
+    
+                <img src="/images/consejeria.jpg" class="ima3">
+                <h5 class="letra1">Consejería</h5>
+                
+            </div>
+            <div id="boton4" onclick="divLogin4()">
+    
+                <img src="/images/conexion.jpg" class="ima4">
+                <h5 class="letra1">Grupos de Conexión</h5>
+                
+            </div>
+            <div id="boton5" onclick="divLogin5()">
+    
+                <img src="/images/peticiones.jpeg" class="ima5">
+                <h5 class="letra2">Peticiones de Oración</h5>
+                
+            </div>
+        </section>
+                      <!-- Discipulados -->
+        <div class="Autenticar">
+            <h2>¿Has tomado algun discipulado en Horizonte CDMX?</h2>
+            <div>
+                <button class="custom-btn btn-3" onclick="steps()"><span>No, es mi primer discipulado</span></button>
+                <button class="custom-btn btn-3" onclick="steps2()"><span>Si, ya he sido discipulado</button></span>
+            </div>
+        </div>
+        <div id="caja1">
+            <h2 class="tem">Inscribete al discipulado:</h2>
+            <button class="custom-btn btn-3" onclick="paso1()"><span>Cimientos de la Fe</button></span>
+            <p class="tem2"><b>TEMARIO</b></p>
+            <div class="dis-col">
+                <div class="dis-col2">
+                    <p class="tab b1">¿Que es la Biblia?</p>
+                    <p class="tab b2">¿Que es la Biblia II?</p>
+                    <p class="tab b3">La Salvación</p>
+                    <p class="tab b4">La Salvación II</p>
+                    <p class="tab b5">Redención</p>
+                    <p class="tab b6">Justificación</p>
+                </div>
+                <div class="dis-col2">
+                    <p class="tab b7">Santificación</p>
+                    <p class="tab b8">Glorificación</p>
+                    <p class="tab b9">La Iglesia</p>
+                    <p class="tab b10">La Iglesia II</p>
+                    <p class="tab b11">Ofrendar</p>
+                </div>
+                <div class="objetivos">
+                    <p class="objUno"><b>Objetivo:   Acercamiento e introduccion a la Biblia</b></p>
+                </div>
+
+            </div>
+
+        </div> 
+        <!-- Formulario de Salvacion -->
+        <div class="caja4">
+            <h2 class="titu">Completa el Formulario</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form1">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25" required="">
+                <label for="email">WhatsApp:</label>
+                <input type="number" name="phone" maxlength="80" size="35" required="">
+                <label for="telephone">Te estas incribiendo al discipulado:</label>
+                <select name="dones" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Cimientos de la Fe</option>
+                </select>
+                <label for="telephone">Elige tu horario:</label>
+                <select name="service" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; 9:00am - 10:00am</option>
+                    <option>&#9724; 11:00am - 12:00pm</option>
+                </select>
+                <label for="comments">Escribenos si tienes alguna duda</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div id="caja">
+            <h2>Inscribete a un discipulado</h2>
+            <button class="custom-btn btn-3" onclick="paso2()"><span>Cimientos de la Fe</span></button>
+            <button class="custom-btn btn-3" onclick="paso2()"><span>Vida de Cristo</span></button>
+        </div>
+        <!-- Formulario de 3 discipulados -->
+        <div class="caja5">
+            <h2>Completa el Formulario</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form2">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25">
+                <label for="email">WhatsApp:</label>
+                <input type="number" name="phone" maxlength="80" size="35">
+                <label for="telephone">Selecciona tu discipulado:</label>
+                <select name="dones" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Cimientos de la Fe</option>
+                    <option>&#9724; Vida de Cristo</option>
+                </select>
+                <label for="telephone">Selecciona el horario:</label>
+                <select name="service" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; 10:00am - 11:00am</option>
+                    <option>&#9724; 12:00pm - 1:00pm</option>
+                    <option>&#9724; 2:00pm - 3:00pm</option>
+                </select>
+                <label for="comments">¿Porque quieres servir en esa area?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+    
+                         <!--Servicios-->
+
+        <div class="Autenticar2">
+            <h2>¿Ya tomaste un discipulado en Horizonte CDMX?</h2>
+            <div>
+                <button class="custom-btn btn-3" onclick="steps3()"><span>Si, ya he sido discipulado</span></button>
+                <button class="custom-btn btn-3" onclick="steps4()"><span>No, tengo menos de 6 meses</span></button>
+            </div>
+        </div>
+        <div id="caja2">
+            <h2>Deja que te sirvamos en lo que tomas un discipulado</h2>
+        </div>
+
+
+        <!--Formulario Servicios-->
+        <div class="caja3">
+            <h2>Completa el Formulario</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form3">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25">
+                <label for="email">WhatsApp:</label>
+                <input type="number" name="phone" maxlength="80" size="35">
+                <label for="telephone">¿Que Don tienes segun Romanos 12:6-8?:</label>
+                <select name="dones" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Profecia</option>
+                    <option>&#9724; Servicio</option>
+                    <option>&#9724; Enseñanza</option>
+                    <option>&#9724; Exhortación</option>
+                    <option>&#9724; Dar</option>   
+                    <option>&#9724; Dirigir</option>
+                    <option>&#9724; Misericordia</option>
+                </select>
+                <label for="telephone">¿En que area quieres servir?:</label>
+                <select name="service" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Cafeteria</option>
+                    <option>&#9724; Niños</option>
+                    <option>&#9724; Recepcion</option>
+                    <option>&#9724; Alabanza</option>
+                    <option>&#9724; Misericordia</option>   
+                    <option>&#9724; Consejeria</option>
+                </select>
+                <label for="comments">¿Porque quieres servir en esa area?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <!-- Consejeria -->
+
+        <div class="caja7">
+            <h2>Completa el Formulario de Consejería</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form-consejeria">
+                <label for="fecha">Fecha de Solicitud: </label>
+                <input type="date" name="feecha" maxlength="50" size="25" require="">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" maxlength="3" size="3" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25" required="">
+                <label for="phone">WhatsApp:</label>
+                <input type="number" name="phone" maxlength="80" size="35">
+                <label for="ocupacion">Ocupación:</label>
+                <input type="text" name="ocupacion" maxlength="80" size="35">
+                <label for="civil">Estado Civil:</label>
+                <select name="dones" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Casado(a)</option>
+                    <option>&#9724; Soltero(a)</option>
+                    <option>&#9724; Union Libre</option>
+                    <option>&#9724; Divorciado(a)</option>
+                    <option>&#9724; Viudo(a)</option>   
+                </select>
+                <label for="hijos">¿Tienes Hijos?:</label>
+                <select name="hijos" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Si</option>
+                    <option>&#9724; No</option>
+                </select>
+                <label for="edades">¿Que edad tienen tus hijos?:</label>
+                <input type="text" name="edades" maxlength="80" size="35">
+                <label for="tiempo">¿Cuánto tiempo llevas congregándote en tu iglesia?:</label>
+                <input type="text" name="tiempo" maxlength="80" size="35">
+                <label for="iglesia">¿Nombre de la iglesia?:</label>
+                <input type="text" name="iglesia" maxlength="80" size="35">
+                <label for="horarios">Los días de consejería son de lunes a Viernes y Domingos. ¿Qué día te es favorable?:</label>
+                <select name="hijos" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Lunes</option>
+                    <option>&#9724; Martes</option>
+                    <option>&#9724; Miercoles</option>
+                    <option>&#9724; Jueves</option>
+                    <option>&#9724; Viernes</option>
+                    <option>&#9724; Domingo</option>
+                </select>
+                <label for="momento">¿En que horario?:</label>
+                <select name="momento" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Mañana</option>
+                    <option>&#9724; Tarde</option>
+                </select>
+                <label for="comments">¿Cuál es la situación principal, cómo la ves? ¿Qué te trae aquí? Específica.</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Qué has hecho al respecto?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Qué entiendes por consejería bíblica? ¿Qué esperas del proceso de consejería bíblica?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Qué es el evangelio para ti?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Cómo consideras tu realación con Dios en este momento?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Qué clase de persona eres, cómo te visualizas? Por favor descríbete</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Qué has leído en la Biblia acerca de su situación; y qué has hecho al respecto?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <label for="comments">¿Hay alguna información que debiéramos conocer?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar" class="envio">
+            </form>
+        </div>
+
+        <!-- Grupos de Conexión -->
+        <div class="Autenticar3">
+            <h2>Registro a Grupo de Conexión</h2>
+            <div>
+                <button class="custom-btn btn-3" onclick="grupom()"><span>Mujeres</span></button>
+                <button class="custom-btn btn-3" onclick="grupoh()"><span>Hombres</span></button>
+            </div>
+        </div>
+
+        <!-- Form grupo de conexion mujeres -->
+        <div class="grupo__woman">
+            <h2>Formulario grupo de Conexión Mujeres</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form__mujeres">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" maxlength="3" size="3" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25">
+                <label for="email">WhatsApp:</label>
+                <input type="number" name="phone" maxlength="80" size="35">
+                <label for="membresia">¿Cuanto tiempo tienes en Horizonte CDMX?:</label>
+                <select name="miembros" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; 0-6 meses</option>
+                    <option>&#9724; 1 año</option>
+                    <option>&#9724; 2 años o más</option>
+                </select>
+                <label for="dia">¿En que día te acomodaria mejor?:</label>
+                <select name="diaMejor" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Lunes</option>
+                    <option>&#9724; Martes</option>
+                    <option>&#9724; Jueves</option>
+                </select>
+                <label for="comments">¿Porque te gustaria estar en un grupo de conexión?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <!-- Form Grupo de Conexión Hombres -->
+
+        <div class="grupo__men">
+            <h2>Formulario grupo de Conexión Hombres</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form__hombres">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" maxlength="3" size="3" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25">
+                <label for="email">WhatsApp::</label>
+                <input type="number" name="phone" maxlength="80" size="35">
+                <label for="membresia">¿Cuanto tiempo tienes en Horizonte CDMX?:</label>
+                <select name="miembros" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; 0-6 meses</option>
+                    <option>&#9724; 1 año</option>
+                    <option>&#9724; 2 años o más</option>
+                </select>
+                <label for="hora">¿En que horario te acomodaria mejor?:</label>
+                <select name="hora" id="color" required="">
+                    <option value="">Seleccionar</option>
+                    <option>&#9724; Mañana</option>
+                    <option>&#9724; Noche</option>
+                </select>
+                <label for="comments">¿Porque te gustaria estar en un grupo de conexión?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <!-- Peticiones de oración -->
+
+        <div class="cajaOracion">
+            <h2 class="or">Queremos Orar por ti</h2>
+            <form name="frmContacto" method="post" action="email.php" class="form__mujeres">
+                <label for="first_name">Nombre: </label>
+                <input type="text" name="first_name" maxlength="50" size="25" require="">
+                <label for="last_name">E-mail: </label>
+                <input type="email" name="E-mail" maxlength="50" size="25">
+                <label for="email">WhatsApp:</label>
+                <input type="number" name="phone" maxlength="80" size="35">
+                <label for="comments">¿Cual es tu petición de oración?</label>
+                <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <!-- Boton Regresar -->
+        <div class="rewin2">
+            <a href="/index.html">
+                <button class="btn_rewin">
+                    <img src="/images/icons8-gira-a-la-izquierda-40.png" class="pulso">
+                </button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="iconos">
+            <a href="https://www.facebook.com/HorizonteCDMX/" target="_blank"><img src="/images/icons8-facebook-nuevo-96.png" class="ico"></a>
+            <a href="https://www.youtube.com/channel/UCxZJF82pFx4TxJtCgUM-1AA" target="_blank"><img src="/images/icons8-youtube-96.png" class="ico"></a>
+            <a href="https://instagram.com/horizontecdmx?igshid=YmMyMTA2M2Y=" target="_blank"><img src="/images/icons8-instagram-96.png" class="ico"></a>
+            <a href="https://open.spotify.com/show/5yZlxzlKPfHCaLquWLm2N0?si=cb64ce08a063435c" target="_blank"><img src="/images/icons8-spotify-96.png" class="ico"></a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/prueba2.js"></script>
+</body>
+</html>

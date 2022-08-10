@@ -1,0 +1,671 @@
+body{
+margin: 0;
+padding: 0;
+padding-bottom: 2rem;
+position: relative;
+min-height: 100vh;
+} 
+
+.contenedor{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    display: flex;
+    background-color: #1565C0;
+    width: 100%;
+    height: 4.2rem;
+}
+
+.h{
+    display: flex;
+    width: 4rem;
+    border-radius: 3px;
+    transition: 1.5s;
+    margin-left: 5px;
+    background-color: white !important;
+    margin-top: 8.5px;
+}
+
+.h:hover{
+	transform: scale(1.1);
+}
+
+.slogan{
+    padding-left: 10px;
+    margin-top: -10px;
+    font-family: 'Goldman', cursive;
+    color: white;
+}
+
+.slogan_1{
+    margin-top: -15px;
+    font-size: large;
+}
+
+
+.saludo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Arima', cursive;
+    margin-top: 0px;
+    font-size: large;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+.continer_logo{
+    position: sticky;
+}
+/* Empiezan los 4 opciones */
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#boton{
+
+	width: 15rem;
+    height: 10rem;
+    background-color: #3949AB;
+	cursor: pointer;
+	margin-top: 10px;
+    box-shadow: 10px 5px 5px #90A4AE;
+    transition: 1.5s;
+}
+
+
+.Autenticar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'Arima', cursive;
+}
+
+#caja1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 2rem;
+    font-family: 'Arima', cursive;
+}
+.tem{
+    margin: auto;
+}
+.tem2{
+    text-align: center;
+    margin-top: 2rem;
+}
+.dis-col{
+    display: flex;
+    flex-direction: row;
+}
+
+.dis-col2{
+    width: 12rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.tab{
+    border: solid #CFD8DC;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+.tab:hover{
+    background-color: #E3F2FD;
+
+}
+
+#boton2{
+
+	width: 15rem;
+    height: 10rem;
+    background-color: #3949AB;
+	cursor: pointer;
+	margin-top: 10px;
+    box-shadow: 10px 5px 5px #90A4AE;
+    transition: 1.5s;
+}
+#boton2:hover{
+
+	opacity: .8;
+
+}
+.Autenticar2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'Arima', cursive;
+}
+
+#boton3{
+
+	width: 15rem;
+    height: 10rem;
+    background-color: #3949AB;
+	cursor: pointer;
+	margin-top: 10px;
+    box-shadow: 10px 5px 5px #90A4AE;
+    transition: 1.5s;
+}
+
+#boton3:hover{
+
+	opacity: .8;
+
+}
+
+.caja7{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'Arima', cursive;
+}
+.form-consejeria{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+#boton4{
+
+	width: 15rem;
+    height: 10rem;
+    background-color: #3949AB;
+	cursor: pointer;
+	margin-top: 10px;
+    box-shadow: 10px 5px 5px #90A4AE;
+    transition: 1.5s;
+    margin-bottom: 1rem;
+}
+
+#boton4:hover{
+	opacity: .8;
+}
+
+#boton5{
+
+	width: 15rem;
+    height: 10rem;
+    background-color: #3949AB;
+	cursor: pointer;
+	margin-top: 10px;
+    box-shadow: 10px 5px 5px #90A4AE;
+    transition: 1.5s;
+    margin-bottom: 1rem;
+}
+
+#boton5:hover{
+	opacity: .8;
+}
+
+.Autenticar3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'Arima', cursive;
+}
+
+.grupo__woman{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Arima', cursive;
+}
+
+.grupo__men{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Arima', cursive;
+}
+
+/* Comienza Caja de Oracion */
+
+.cajaOracion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Arima', cursive;
+}
+
+input{
+    justify-content: center;
+}
+
+/* Termina caja de Oracion */
+
+.ima1 {
+    display: flex;
+    width: 15rem;
+    position: absolute;
+    opacity: .6;
+}
+.letra1 {
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: x-large;
+    background-image: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .6) 90%, transparent 95%);
+    transition: 1.5s;
+    font-family: 'Arima', cursive;
+    
+}
+
+.letra1:hover{
+    transform: scale(1.1);
+
+}
+
+.letra2{
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 1.4rem;
+    background-image: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .6) 90%, transparent 95%);
+    transition: 1.5s;
+    font-family: 'Arima', cursive;
+}
+
+.letra2:hover{
+    transform: scale(1.1);
+
+}
+
+.ima2 {
+    display: flex;
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    opacity: .6;
+}
+
+.ima3 {
+    display: flex;
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    opacity: .6;
+}
+
+.ima4 {
+    display: flex;
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    opacity: .6;
+}
+
+.ima5 {
+    display: flex;
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    opacity: .6;
+}
+
+#boton:hover{
+
+	opacity: .8;
+
+}
+
+
+
+#caja{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arima', cursive;
+
+	margin: auto;
+    z-index: 500;
+
+}
+
+#caja2{
+    margin: auto;
+    font-family: 'Arima', cursive;
+}
+
+.caja3 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Arima', cursive;
+}
+
+.caja4{
+    margin: auto;
+    font-family: 'Arima', cursive;
+}
+
+.caja5 {
+    margin-top:6rem;
+    height: 100%;
+    margin: auto;
+    font-family: 'Arima', cursive;
+}
+
+/* Empiezan los Formularios */
+input{
+    display: flex;
+    height: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    height: 2rem;
+}
+
+.titu{
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 22rem;
+}
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+}
+.form3 {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+}
+.form-consejeria{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 100%;
+}
+
+.form__mujeres{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 23rem;
+    height: 100%;
+}
+
+.or{
+    padding-top: 2rem;
+}
+
+.form__hombres{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 23rem;
+    height: 100%;
+}
+
+/* Boton de Regresar */
+
+.rewin2{
+    display: flex;
+    flex-direction: row-reverse ;
+    margin-top: 6rem;
+    margin-right: 7rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    position: sticky;
+}
+
+.pulso{
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn_rewin{
+    display: flex;
+    background-color: white;
+    border: none;
+    transition: 1.3s;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    position: absolute;
+}
+
+.btn_rewin::before, .btn_rewin::after{
+        content:"";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        border: 10px solid #29B6F6;
+        border-radius:100%;
+        animation: latido linear 3s infinite;
+}
+.btn_rewin:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.btn_rewin::after {
+    animation-delay: -1.5s;
+  }
+  
+  @keyframes latido {
+    0% { width:40px; height:40px; border:8px solid #1976D2; }
+    100% { width:70px; height:70px; border:10px solid transparent; }
+  }
+
+  /* prueba boton */
+
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin: auto;
+  }
+
+  .btn-3 {
+    background: #FF5722;
+  background: linear-gradient(0deg, #FF5722 0%, #FF5722 100%);
+    width: 190px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #FF5722;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: #FF5722;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #FF5722;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+  /* Footer */
+
+  .iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color:#1565C0 ;
+  }
+
+  .ico{
+    background-color: white;
+    margin-left: 1rem;
+    margin-top: 5px;
+    height: 1.8rem;
+    border-radius: 42px;
+  }
+
+  /* Responsive */
+
+  @media screen and (min-width: 300px){
+    .cards{
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+
+    .saludo{
+        font-size: small;
+    }
+    #boton{
+        width: 13rem;
+        height: 8.7rem;
+    }
+    .ima1{
+        width: 13rem;
+    }
+    #boton2{
+        width: 13rem;
+        height: 8rem;
+    }
+    .ima2{
+        width: 13rem;
+        height: 8rem;
+    }
+    #boton3{
+        width: 13rem;
+        height: 8rem;
+    }
+    .ima3{
+        width: 13rem;
+        height: 8rem;
+    }
+    #boton4{
+        width: 13rem;
+        height: 8rem;
+    }
+    .ima4{
+        width: 13rem;
+        height: 8rem;
+    }
+    #boton5{
+        width: 13rem;
+        height: 8rem;
+    }
+    .ima5{
+        width: 13rem;
+        height: 8rem;
+    }
+    .letra1{
+        margin-top: 60px;
+        font-size: large;
+    }
+    .letra2{
+        margin-top: 60px;
+        font-size: large;
+    }
+    .form-consejeria{
+        width: 23rem;
+    }
+    .form__mujeres{
+        width: 22rem;
+    }
+    .form__hombres{
+        width: 22rem;
+    }
+}
+
+/* Objetivos del temario */
